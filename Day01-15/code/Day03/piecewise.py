@@ -12,8 +12,10 @@ Date: 2018-02-28
 x = float(input('x = '))
 if x > 1:
     y = 3 * x - 5
+    print('f(x)=3*x-5=','f(%.2f)=%.2f' % (x, y))
 elif x >= -1:
     y = x + 2
+    print('f(x)=x+2=','f(%.2f)=%.2f'%(x,y))
 else:
     y = 5 * x + 3
-print('f(%.2f) = %.2f' % (x, y))
+    print('f(x)=5*x+3=','f(%.2f)=%.2f'%(x,y)) 

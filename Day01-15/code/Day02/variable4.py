@@ -13,10 +13,10 @@ d = 1 + 5j
 e = 'A'
 f = 'hello, world'
 g = True
-print(type(a))
-print(type(b))
-print(type(c))
-print(type(d))
-print(type(e))
-print(type(f))
-print(type(g))
+print('type of a is',type(a))
+print('type of b is',type(b))
+print('type of c is',type(c))
+print('d is',d,'type of d is',type(d)) #d是复数，实部为1，虚部为5
+print('type of e is',type(e))
+print('type of f is',type(f))
+print('type of g is',type(g))

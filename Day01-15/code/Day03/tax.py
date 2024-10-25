@@ -9,7 +9,7 @@ Date: 2018-02-28
 
 salary = float(input('本月收入: '))
 insurance = float(input('五险一金: '))
-diff = salary - insurance - 3500
+diff = salary - insurance - 5000
 if diff <= 0:
     rate = 0
     deduction = 0
