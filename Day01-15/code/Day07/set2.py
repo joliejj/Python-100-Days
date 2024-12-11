@@ -7,8 +7,8 @@
 - 超集
 
 Version: 0.1
-Author: 骆昊
-Date: 2018-03-06
+Author: joliej
+Date: 2024-11-28
 """
 
 
@@ -18,13 +18,14 @@ def main():
     set2 = set(range(2, 11, 2))
     print(set2)
     set3 = set(range(1, 5))
-    print(set1 & set2)
-    # print(set1.intersection(set2))
-    print(set1 | set2)
-    # print(set1.union(set2))
-    print(set1 - set2)
-    # print(set1.difference(set2))
-    print(set1 ^ set2)
+    print(set3)
+    #print(set1 & set2& set3)
+    print(set1.intersection(set2,set3))
+    #print(set1 | set2 |set3)
+    print(set1.union(set2,set3))
+    print(set1 - set2 )
+    #print(set1.difference(set2))
+    print(set1^set2^set3)
     # print(set1.symmetric_difference(set2))
     print(set2 <= set1)
     # print(set2.issubset(set1))

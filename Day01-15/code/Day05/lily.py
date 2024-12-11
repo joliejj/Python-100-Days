@@ -8,9 +8,10 @@ Author: 骆昊
 Date: 2018-03-02
 """
 
-for num in range(100, 1000):
-    low = num % 10
-    mid = num // 10 % 10
-    high = num // 100
-    if num == low ** 3 + mid ** 3 + high ** 3:
-        print(num)
+
+for num in range(100,1000):
+    low=num%10
+    middle=num//10%10
+    upper=num//100
+    if num == low**3+middle**3+upper**3:
+        print(num,"=",upper,"**3 + ",middle,"**3 +",low,"**3")

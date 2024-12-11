@@ -32,7 +32,7 @@ def f2(*args):
 
 print(f2(1, 2, 3))
 print(f2(1, 2, 3, 4, 5))
-print(f2())
+print(f2(3))
 
 
 # 关键字参数

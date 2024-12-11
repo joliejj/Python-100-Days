@@ -11,7 +11,7 @@ Author: 骆昊
 Date: 2018-03-05
 """
 
-
+# 定义一个检查字符串长度是否为6的函数
 def myfilter(mystr):
     return len(mystr) == 6
 
@@ -23,7 +23,7 @@ print(abs(-1.2345))
 print(round(-1.2345))
 print(pow(1.2345, 5))
 fruits = ['orange', 'peach', 'durian', 'watermelon']
-print(fruits[slice(1, 3)])
+print(fruits[slice(1, 3)])#slice(1, 3) 用于获取序列中从索引1到索引2（不包括索引3）的元素
 fruits2 = list(filter(myfilter, fruits))
 print(fruits)
 print(fruits2)

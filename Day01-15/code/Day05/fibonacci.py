@@ -7,8 +7,12 @@ Author: 骆昊
 Date: 2018-03-02
 """
 
-a = 0
+a = 1
 b = 1
+print(a,b,end=' ')
 for _ in range(20):
-    a, b = b, a + b
-    print(a, end=' ')
+    c=a + b
+    a=b
+    b=c
+    print(c,end=' ')
+    

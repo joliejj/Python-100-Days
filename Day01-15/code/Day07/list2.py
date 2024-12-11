@@ -9,27 +9,24 @@
 - 查找元素
 
 Version: 0.1
-Author: 骆昊
-Date: 2018-03-06
+Author: joliej
+Date: 2024-11-27
 """
 
-
 def main():
-    fruits = ['grape', 'apple', 'strawberry', 'waxberry']
-    fruits += ['pitaya', 'pear', 'mango']
-    # 循环遍历列表元素
+    fruits=['grape','apple','strawberry','waxberry']
+    fruits+=['pitaya','pear','mango']
     for fruit in fruits:
-        print(fruit.title(), end=' ')
+        print(fruit.title(),end=',')
     print()
-    # 列表切片
-    fruits2 = fruits[1:4]
+
+    fruits2=fruits[1:5]
     print(fruits2)
-    # fruit3 = fruits  # 没有复制列表只创建了新的引用
-    fruits3 = fruits[:]
+    fruits3=fruits[0:5]
     print(fruits3)
-    fruits4 = fruits[-3:-1]
+    fruits4=fruits[-4:-2]#使用切片操作创建一个新的列表 fruits4，包含 fruits 列表中倒数第四个到倒数第三个元素。
     print(fruits4)
-    fruits5 = fruits[::-1]
+    fruits5=fruits[::-1]
     print(fruits5)
 
 

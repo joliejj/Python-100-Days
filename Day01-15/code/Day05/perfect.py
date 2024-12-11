@@ -4,17 +4,25 @@
 例如: 6 = 1 + 2 + 3, 28 = 1 + 2 + 4 + 7 + 14
 
 Version: 0.1
-Author: 骆昊
-Date: 2018-03-02
+Author: joliej
+Date: 2024-11-20
 """
 import math
 
-for num in range(2, 10000):
-    result = 0
-    for factor in range(1, int(math.sqrt(num)) + 1):
-        if num % factor == 0:
-            result += factor
-            if factor > 1 and num // factor != factor:
-                result += num // factor
-    if result == num:
-        print(num)
+for num in range(2,10000):
+    result=0
+    #fw=int(math.sqrt(num))
+    temp=[]
+    for factor in range(1,num):
+        if num % factor ==0:
+            result+=factor
+            temp.append(factor)
+    
+           # if factor>1 and num//factor!=factor:
+            #    result+=factor
+           #     temp.append(factor)
+    if result ==num and len(temp)>1:
+        print(num,'=')
+        for i in temp:
+            print(i,end='+')
+        print()

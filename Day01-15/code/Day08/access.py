@@ -1,15 +1,16 @@
 class Test:
-
-    def __init__(self, foo):
-        self.__foo = foo
+    #在Python中，__foo 是一个私有属性的命名约定
+    def __init__(self,foo):
+        self.__foo=foo
 
     def __bar(self):
         print(self.__foo)
-        print('__bar')
+        print("__bar")
 
 
 def main():
-    test = Test('hello')
+    test=Test('nihao')
+    #print(test.__foo)
     test._Test__bar()
     print(test._Test__foo)
 
